@@ -4,7 +4,7 @@ image: python2.7
 
 services:
   - mysql
-  - reids
+  - redis
   - mongodb
 
 env:
