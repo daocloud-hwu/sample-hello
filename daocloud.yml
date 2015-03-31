@@ -1,0 +1,23 @@
+# This is a comment line
+
+image: python2.7
+
+services:
+  - mysql
+  - reids
+  - mongodb
+
+env:
+  - MYENV=1.txt
+
+script:
+  - echo "1" > ${MYENV}
+  - cat ${MYENV}
+  - rm -rf ${MYENV}
+
+notify:
+  email:
+    recipients:
+      - haipeng.wu@daocloud.io
+    on_success: on
+    on_failure: on
