@@ -1,6 +1,6 @@
 # This is a comment line
 
-image: python2.7
+image: daocloud/ci-python:2.7
 
 services:
   - mysql
