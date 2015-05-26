@@ -12,7 +12,8 @@ env:
   - MYENV=1.txt
 
 install:
-  - apt-get install git-core
+  - apt-get update -y
+  - apt-get install -y git-core
   
 script:
   - echo "1" > ${MYENV}
