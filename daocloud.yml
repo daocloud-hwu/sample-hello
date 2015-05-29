@@ -19,3 +19,4 @@ script:
   - echo "1" > ${MYENV}
   - cat ${MYENV}
   - rm -rf ${MYENV}
+
